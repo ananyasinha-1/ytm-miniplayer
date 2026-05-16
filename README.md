@@ -77,6 +77,40 @@ These instructions have been designed and tested for a clean local machine envir
    * **For Firefox:** Navigate to `about:debugging#/runtime/this-firefox`, click "Load Temporary Add-on", and select the `manifest.json` inside the `dist/firefox/` folder.
 
 ---
+## 🪟 Windows Setup Notes
+
+Windows users may face issues while setting up the extension locally because the project uses bash scripts and Linux utilities.
+
+### Recommended Setup
+- Install Git for Windows: https://git-scm.com/download/win
+- Use Git Bash instead of Command Prompt
+- Install Node.js (v18+ recommended)
+
+### Running the Build
+Run the following commands inside Git Bash:
+
+```bash
+npm install
+npm run build
+```
+
+### Common Issues
+
+#### `bash build.sh` not working
+This project uses bash scripts which may not work correctly in Command Prompt or PowerShell. Use Git Bash instead.
+
+#### `zip: command not found`
+Some Windows environments may not include the `zip` utility by default.
+
+#### Missing `manifest.chrome.json`
+The build script references `manifest.chrome.json` during the Chrome and Edge build process.
+
+### Loading the Extension
+After building:
+- Open `chrome://extensions`
+- Enable Developer Mode
+- Click "Load unpacked"
+- Select the `dist/chrome` folder
 
 ## 🤝 Contribution Guidelines
 
