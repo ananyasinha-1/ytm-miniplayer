@@ -15,7 +15,7 @@ Examples of behavior that contribute to a positive environment include:
 * Supporting contributors of all experience levels.
 * Sharing knowledge and helping others learn.
 * Collaborating openly on improvements and bug fixes.
-* Supporting the growth of the project and, if you find it useful, considering giving the repository a ⭐ star.
+* Supporting the growth of the project.
 
 Examples of unacceptable behavior include:
 
